@@ -20,7 +20,9 @@ ul {
 
 li {
     padding: 0px 20px;
+    display: inline;
 }
+
 
 /* Tipografías */
 h1 {
@@ -44,6 +46,7 @@ h4 {
     font-family: 'Sofia Sans', sans-serif;
     font-style: bold;
     color: black;
+    padding: 10px 20px 10px 20px;
 }
 
 p {
@@ -54,11 +57,16 @@ p {
 
 .stars{
     color: black;
+    padding: 0;
 }
 
 .textcenter {
     text-align: center;
     padding: 28px;
+}
+
+.textleft{
+    text-align: left;
 }
 
 main section h2{
@@ -73,12 +81,14 @@ main section div img {
 .products {
     width: 387px;
     text-align: center;
+    margin: 0px 10px 65px 10px;
 }
 
 .seccioneshome {
     width: 257px;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin: 0px 10px 65px 10px;
 }
 
 .poema {
@@ -88,10 +98,32 @@ main section div img {
     margin-bottom: 64px;
 }
 
-/* Partes del documento */
 
 .resena {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.resenatexto {
     width: 650px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.contacto{
+    width: 350px;
+}
+
+.contacto1{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 header {
@@ -121,6 +153,7 @@ main article {
     align-self: center;
 }
 
+
 main{
     display: flex;
     flex-direction: column;
@@ -134,9 +167,9 @@ main section{
     justify-content: space-around;
 }
 
-li {
+/* li {
     display: inline;
-}
+} */
 
 header nav ul li a {
     font-size: 16px;
@@ -154,10 +187,6 @@ header nav ul li a:hover {
 
 #heroimage { 
     width: 100%;
-}
-
-.trescolumnas {
-    width: 26.8%;
 }
 
 
@@ -178,6 +207,13 @@ body::-webkit-scrollbar-thumb {
 }
 /* Fin prueba scroll */
 
+.playlist {
+    margin: 0 0 65px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
   footer {
     border-top: #ddd8d8 solid 1px;
@@ -196,4 +232,5 @@ body::-webkit-scrollbar-thumb {
 
   footer i {
     color: black;
+    padding: 10px 0 10px 0;
   }
